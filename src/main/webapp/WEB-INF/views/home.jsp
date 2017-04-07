@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Bluemix - Object Storage</title>
+<title>Hackathon Finals</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<h1>Document Manager</h1>

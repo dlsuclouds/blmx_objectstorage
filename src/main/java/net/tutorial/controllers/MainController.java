@@ -48,9 +48,13 @@ public class MainController extends HttpServlet {
 		switch (req.getServletPath()) {
 
 			 case "/ConvertText":
+				try{
 					TextToSpeechService service = new TextToSpeechService();
 					String text = req.getParameter("text");
 					service.getAudio(text, resp);
+				} catch (Exception e){
+					e.printStackTrace();
+				}
 			 	break;
 
 			 case "/FileUpload":

@@ -9,12 +9,12 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<hr>
-	<legend class="header">Convert Text to Speech</legend>
+
+	<h1>Convert Text to Speech</h1>
 
 	<form action="home" method="POST">
 		<p class="panel">
-			<textarea name="text" rows="5" cols="100"><c:if
+			<textarea name="text" rows="5" cols="100" resize="none"><c:if
 					test="${!empty text}">${text}</c:if></textarea>
 		</p>
 		<p class="action">

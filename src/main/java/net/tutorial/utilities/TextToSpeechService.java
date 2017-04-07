@@ -25,7 +25,7 @@ public class TextToSpeechService {
 	}
 
 	public void getAudio(String text, HttpServletResponse resp) throws IOException {
-		resp.setContentType("text/xml");
+		resp.setContentType("text/plain");
 		resp.setHeader( "Content-Disposition", "filename=" + text );
 		
 		InputStream stream = service.synthesize(text, Voice.EN_ALLISON, AudioFormat.WAV).execute();

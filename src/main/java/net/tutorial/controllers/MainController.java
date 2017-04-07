@@ -18,7 +18,7 @@ import javax.servlet.http.Part;
 import net.tutorial.utilities.ObjectStorageService;
 import net.tutorial.utilities.TextToSpeechService;
 
-@WebServlet({ "home", "", "/DoGetConvertText", "/DoGetFileUpload", "/DoPostConvertText", "/DoPostFileUpload"})
+@WebServlet({ "home", "", "/ConvertText", "/FileUpload"})
 @MultipartConfig
 public class MainController extends HttpServlet {
 
@@ -27,20 +27,25 @@ public class MainController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		try{
-			allServlets(req,resp);
-		} catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
-			e.printStackTrace();
-		}
+		this.os = new ObjectStorageService();
+
+		List<String> documents = this.os.getDocumentList("Documents");
+		req.setAttribute("documents", documents);
+
+		dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/home.jsp");
+		dispatcher.forward(req, resp);
+
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
 		try{
 			allServlets(req,resp);
 		} catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}
+					
 	}
 
 	protected void allServlets(HttpServletRequest req, HttpServletResponse resp)
@@ -48,17 +53,7 @@ public class MainController extends HttpServlet {
 
 		switch (req.getServletPath()) {
 
-			 case "/DoGetConvertText":
-			 	try{
-			 		dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/home.jsp");
-					dispatcher.forward(req, resp);
-			 	} catch (Exception e){
-			 		e.printStackTrace();
-			 	}
-
-			 	break;
-
-			 case "/DoPostConvertText":
+			 case "/ConvertText":
 				try{
 					TextToSpeechService service = new TextToSpeechService();
 					String text = req.getParameter("text");
@@ -69,24 +64,7 @@ public class MainController extends HttpServlet {
 
 			 	break;
 
-			 case "/DoGetFileUpload":
-			 	try{
-
-			 		this.os = new ObjectStorageService();
-
-					List<String> documents = this.os.getDocumentList("Documents");
-					req.setAttribute("documents", documents);
-
-					dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/home.jsp");
-					dispatcher.forward(req, resp);
-
-			 	} catch (Exception e){
-			 		e.printStackTrace();
-			 	}
-
-			 	break;
-
-			 case "/DoPostFileUpload":
+			 case "/FileUpload":
 			 	try{
 
 			 		final Part filePart = req.getPart("file");

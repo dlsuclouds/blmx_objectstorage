@@ -1,6 +1,8 @@
 package net.tutorial.controllers;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -41,7 +43,7 @@ public class MainController extends HttpServlet {
 		}
 	}
 
-	protected void allServlets(HttpServletRequest req, HttpServletResponse req)
+	protected void allServlets(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException, InvalidKeySpecException, NoSuchAlgorithmException {
 
 		switch (request.getServletPath()) {
@@ -105,6 +107,6 @@ public class MainController extends HttpServlet {
 
 			 	break;
 
-			 }
+			}
 		}
 	}

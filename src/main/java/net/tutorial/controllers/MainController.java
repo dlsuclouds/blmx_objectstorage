@@ -45,6 +45,9 @@ public class MainController extends HttpServlet {
 					TextToSpeechService service = new TextToSpeechService();
 					String text = req.getParameter("text");
 					service.getAudio(text, resp);
+					
+					dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/home.jsp");
+					dispatcher.forward(req, resp);
 
 				} catch (Exception e){
 					e.printStackTrace();

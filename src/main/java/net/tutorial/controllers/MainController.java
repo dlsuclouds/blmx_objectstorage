@@ -46,7 +46,7 @@ public class MainController extends HttpServlet {
 	protected void allServlets(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException, InvalidKeySpecException, NoSuchAlgorithmException {
 
-		switch (request.getServletPath()) {
+		switch (req.getServletPath()) {
 
 			 case "/DoGetConvertText":
 			 	try{

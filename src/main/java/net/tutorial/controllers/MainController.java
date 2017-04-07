@@ -1,8 +1,6 @@
 package net.tutorial.controllers;
 
 import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -40,28 +38,19 @@ public class MainController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		try{
-			allServlets(req,resp);
-		} catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
-			e.printStackTrace();
-		}
+		allServlets(req,resp);
 					
 	}
 
 	protected void allServlets(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException, InvalidKeySpecException, NoSuchAlgorithmException {
+			throws ServletException, IOException {
 
 		switch (req.getServletPath()) {
 
 			 case "/ConvertText":
-				try{
 					TextToSpeechService service = new TextToSpeechService();
 					String text = req.getParameter("text");
 					service.getAudio(text, resp);
-			 	} catch (Exception e){
-			 		e.printStackTrace();
-			 	}
-
 			 	break;
 
 			 case "/FileUpload":

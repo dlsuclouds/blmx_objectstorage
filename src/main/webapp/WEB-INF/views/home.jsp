@@ -18,6 +18,7 @@
 					test="${!empty text}">${text}</c:if></textarea>
 		</p>
 		<p class="action">
+			<input type="reset" value="Clear">
 			<input type="submit" value="Convert">
 		</p>
 	</form>

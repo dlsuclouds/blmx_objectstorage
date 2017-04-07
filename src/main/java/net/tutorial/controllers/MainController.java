@@ -41,7 +41,7 @@ public class MainController extends HttpServlet {
 		}
 	}
 
-	protected void allServlets((HttpServletRequest request, HttpServletResponse response)
+	protected void allServlets(HttpServletRequest req, HttpServletResponse req)
 			throws ServletException, IOException, InvalidKeySpecException, NoSuchAlgorithmException {
 
 		switch (request.getServletPath()) {

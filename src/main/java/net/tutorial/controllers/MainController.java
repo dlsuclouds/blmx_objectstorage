@@ -18,7 +18,7 @@ import javax.servlet.http.Part;
 import net.tutorial.utilities.ObjectStorageService;
 import net.tutorial.utilities.TextToSpeechService;
 
-@WebServlet({ "/DoGetConvertText", "/DoGetFileUpload", "/DoPostConvertText", "/DoPostFileUpload", "home", "" })
+@WebServlet({ "home", "", "/DoGetConvertText", "/DoGetFileUpload", "/DoPostConvertText", "/DoPostFileUpload"})
 @MultipartConfig
 public class MainController extends HttpServlet {
 

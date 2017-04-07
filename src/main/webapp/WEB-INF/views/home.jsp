@@ -9,6 +9,19 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+	<hr>
+	<legend class="header">Convert Text to Speech</legend>
+
+	<form action="home" method="POST">
+		<p class="panel">
+			<textarea name="text" rows="5" cols="100"><c:if
+					test="${!empty text}">${text}</c:if></textarea>
+		</p>
+		<p class="action">
+			<input type="submit" value="Convert">
+		</p>
+	</form>
+	<hr>
 	<h1>Document Manager</h1>
 
 	<form action="home" method="POST" enctype="multipart/form-data">
@@ -22,5 +35,7 @@
 		<li><a href="file?action=download&fn=${doc}">${doc}</a> &nbsp; [<a href="file?action=delete&fn=${doc}">delete</a>]</li> 
 	</c:forEach>
 	</ul>
+	
+
 </body>
 </html>

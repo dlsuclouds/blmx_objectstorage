@@ -38,13 +38,6 @@ public class MainController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		allServlets(req,resp);
-					
-	}
-
-	protected void allServlets(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-
 		switch (req.getServletPath()) {
 
 			 case "/ConvertText":
@@ -81,4 +74,4 @@ public class MainController extends HttpServlet {
 
 			}
 		}
-	}
+

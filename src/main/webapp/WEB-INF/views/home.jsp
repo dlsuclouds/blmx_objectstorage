@@ -12,7 +12,7 @@
 
 	<h1>Convert Text to Speech</h1>
 
-	<form action="DoPostConvertText" method="POST">
+	<form action="ConvertText" method="POST">
 		<p class="panel">
 			<textarea name="text" rows="5" cols="100" resize="none"><c:if
 					test="${!empty text}">${text}</c:if></textarea>
@@ -24,7 +24,7 @@
 	<hr>
 	<h1>Document Manager</h1>
 
-	<form action="DoPostFileUpload" method="POST" enctype="multipart/form-data">
+	<form action="FileUpload" method="POST" enctype="multipart/form-data">
 		<input type="file" name="file">
 		<input type="submit" value="Submit">
 	</form>

@@ -15,6 +15,33 @@
 </head>
 <body>
 
+    <div id="sep">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>Welcome!</h1>
+            <h4>Take a tour of our new app!</h4>
+          </div><!--/col-md-8-->
+        </div>
+      </div>
+    </div><!--/sep-->
+
+    <div class="container ptb">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Inclusive of 2 services!</h2>
+          <p class="mt">Powered by IBM Bluemix, this app is connected to the text-to-speech Watson service and the object storage service. You can download your audio file and store them online as well!</p>
+          <p class="store">
+            <img src="assets/img/textspeech.png" height="50" alt="">
+            <img src="assets/img/obj-store.png" height="50" alt="">
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/bluemix.png" class="img-responsive mt" alt="">
+        </div>
+      </div><!--/row-->
+    </div><!--/container-->
+
 	<div id="h">
 	      <div class="container">
 		<div class="row">
@@ -37,20 +64,22 @@
 	      </div><!--/container-->
 	    </div><!-- /H -->
 	
-	
-	<h1>Document Manager</h1>
 
-	<form action="FileUpload" method="POST" enctype="multipart/form-data">
-		<input type="file" name="file">
-		<input type="submit" value="Submit">
-	</form>
+ <div class="container ptb">
+      <div class="row centered">
+        <h2 class="mb">Document Manager</h2>
+		<form action="FileUpload" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file">
+			<input type="submit" value="Submit">
+		</form>
 
-	<hr>
-	<ul>
-	<c:forEach items="${documents}" var="doc">
-		<li><a href="file?action=download&fn=${doc}">${doc}</a> &nbsp; [<a href="file?action=delete&fn=${doc}">delete</a>]</li> 
-	</c:forEach>
-	</ul>
+		<ul class="list-group">
+		<c:forEach items="${documents}" var="doc">
+			<li class="list-group-item"><a href="file?action=download&fn=${doc}">${doc}</a> &nbsp; [<a href="file?action=delete&fn=${doc}">delete</a>]</li> 
+		</c:forEach>
+		</ul>
+      </div><!--/row-->
+    </div><!--/container-->
 	
 
 </body>

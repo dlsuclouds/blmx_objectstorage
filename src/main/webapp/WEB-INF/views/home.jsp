@@ -107,7 +107,6 @@
 
           <p class="mt">
             <i class="ion-social-twitter"></i>
-            <i class="ion-social-dribbble"></i>
             <i class="ion-social-instagram"></i>
             <i class="ion-social-facebook"></i>
             <i class="ion-social-pinterest"></i>
@@ -117,13 +116,6 @@
         </div><!--/row-->
       </div><!--/container-->
     </div><!--/F-->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina-1.1.0.js"></script>
 
 </body>
 </html>

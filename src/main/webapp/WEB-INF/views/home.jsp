@@ -32,8 +32,8 @@
           <h2>Inclusive of 2 services!</h2>
           <p class="mt">Powered by IBM Bluemix, this app is connected to the text-to-speech Watson service and the object storage service. You can download your audio file and store them online as well!</p>
           <p class="store">
-            <img src="assets/img/textspeech.png" height="100" alt="">
-            <img src="assets/img/obj-store.png" height="100" alt="">
+            <img src="assets/img/textspeech.png" height="75" alt="">
+            <img src="assets/img/obj-store.png" height="75" alt="">
           </p>
         </div>
         <div class="col-md-6">
@@ -99,6 +99,31 @@
       </div>
     </div><!--/g-->
 	
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <h2>You Can Contact Us</h2>
+          <h5>SLACK</h5>
+
+          <p class="mt">
+            <a href="#"><i class="ion-social-twitter"></i></a>
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+            <a href="#"><i class="ion-social-pinterest"></i></a>
+            <a href="#"><i class="ion-social-tumblr"></i></a>
+          </p>
+          <h6 class="mt">COPYRIGHT 2017 - Izumiya | Leong | Yusay | Arceo</h6>
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/F-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
 
 </body>
 </html>

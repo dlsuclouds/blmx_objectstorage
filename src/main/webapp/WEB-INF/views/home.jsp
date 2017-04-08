@@ -106,12 +106,12 @@
           <h5>SLACK</h5>
 
           <p class="mt">
-            <a href="#"><i class="ion-social-twitter"></i></a>
-            <a href="#"><i class="ion-social-dribbble"></i></a>
-            <a href="#"><i class="ion-social-instagram"></i></a>
-            <a href="#"><i class="ion-social-facebook"></i></a>
-            <a href="#"><i class="ion-social-pinterest"></i></a>
-            <a href="#"><i class="ion-social-tumblr"></i></a>
+            <i class="ion-social-twitter"></i>
+            <i class="ion-social-dribbble"></i>
+            <i class="ion-social-instagram"></i>
+            <i class="ion-social-facebook"></i>
+            <i class="ion-social-pinterest"></i>
+            <i class="ion-social-tumblr"></i>
           </p>
           <h6 class="mt">COPYRIGHT 2017 - Izumiya | Leong | Yusay | Arceo</h6>
         </div><!--/row-->

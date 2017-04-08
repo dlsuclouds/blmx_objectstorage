@@ -314,14 +314,14 @@ ul {
 }
 
 .sponsor img {
-	max-width: 250px;
-	max-height: 100px;
+	max-width: 140px;
+	max-height: 60px;
 	vertical-align: middle;
 }
 
 .sponsor .col-sm-2 {
-	height: 80px;
-	line-height: 80px;
+	height: 40px;
+	line-height: 40px;
 }
 
 /* GREEN SECTION - TESTIMONIAL */

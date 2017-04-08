@@ -83,7 +83,7 @@
     <div id="g">
       <div class="container">
         <div class="row sponsor centered">
-          <div class="col-sm-2 col-sm-offset-1">
+          <div class="col-sm-2">
             <img src="assets/img/carlo-izumiya.png" alt="">
           </div>
           <div class="col-sm-2">

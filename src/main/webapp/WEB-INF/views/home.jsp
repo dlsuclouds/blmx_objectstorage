@@ -32,8 +32,8 @@
           <h2>Inclusive of 2 services!</h2>
           <p class="mt">Powered by IBM Bluemix, this app is connected to the text-to-speech Watson service and the object storage service. You can download your audio file and store them online as well!</p>
           <p class="store">
-            <img src="assets/img/textspeech.png" height="50" alt="">
-            <img src="assets/img/obj-store.png" height="50" alt="">
+            <img src="assets/img/textspeech.png" alt="">
+            <img src="assets/img/obj-store.png" alt="">
           </p>
         </div>
         <div class="col-md-6">

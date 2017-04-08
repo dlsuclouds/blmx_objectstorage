@@ -84,16 +84,16 @@
       <div class="container">
         <div class="row sponsor centered">
           <div class="col-sm-2">
-            <img src="assets/img/carlo-izumiya.png" alt="">
+            <img src="assets/img/carlo-izumiya.png" height="75" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/gaby-yusay.png" alt="">
+            <img src="assets/img/gaby-yusay.png" height="75" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/herbert-leong.png" alt="">
+            <img src="assets/img/herbert-leong.png" height="75" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/rod-arceo.png" alt="">
+            <img src="assets/img/rod-arceo.png" height="75" alt="">
           </div>
         </div><!--/row-->
       </div>
